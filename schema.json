@@ -1,0 +1,139 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "deepseek DeepSeek Adaptation Plugin Configuration",
+  "description": "Configuration schema for @deepseek/opencode-plugin",
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean",
+      "description": "Master enable/disable switch.",
+      "default": true
+    },
+    "prompts": {
+      "type": "object",
+      "description": "Prompt injection control.",
+      "properties": {
+        "constitution": {
+          "type": "boolean",
+          "description": "Constitution â€?8 articles of the deepseek framework.",
+          "default": true
+        },
+        "statutes": {
+          "type": "boolean",
+          "description": "Statutes â€?Tier 2 regulations (language, output, verification).",
+          "default": true
+        },
+        "regulations": {
+          "type": "boolean",
+          "description": "Regulations â€?Tier 3 rules (composition, orchestration).",
+          "default": true
+        },
+        "v4Characteristics": {
+          "type": "string",
+          "enum": ["auto", "on", "off"],
+          "description": "V4 model characteristics. 'auto' detects from model id.",
+          "default": "auto"
+        },
+        "languagePolicy": {
+          "type": "string",
+          "enum": ["auto", "zh-CN", "en", "off"],
+          "description": "Language policy for bilingual reasoning.",
+          "default": "auto"
+        },
+        "cacheStrategy": {
+          "type": "boolean",
+          "description": "Prefix cache strategy guidance.",
+          "default": true
+        },
+        "thinkingBudget": {
+          "type": "boolean",
+          "description": "Thinking budget table.",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "providers": {
+      "type": "object",
+      "description": "Provider configuration.",
+      "properties": {
+        "enhanceDeepSeek": {
+          "type": "boolean",
+          "description": "Enhance the existing deepseek OpenCode provider.",
+          "default": true
+        },
+        "extendedProviders": {
+          "type": "boolean",
+          "description": "Register extended provider endpoints.",
+          "default": true
+        },
+        "strictToolMode": {
+          "type": "boolean",
+          "description": "Enable strict tool mode on DeepSeek beta endpoint.",
+          "default": true
+        },
+        "reasoningSanitizer": {
+          "type": "boolean",
+          "description": "Inject reasoning_content placeholder for DeepSeek thinking mode.",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "skills": {
+      "type": "object",
+      "description": "Skill bridge configuration.",
+      "properties": {
+        "bridgedeepseekSkills": {
+          "type": "boolean",
+          "description": "Bridge deepseek skill directories.",
+          "default": true
+        },
+        "scanPaths": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Paths to scan for SKILL.md files.",
+          "default": ["~/.deepseek/skills", ".deepseek/skills"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "agents": {
+      "type": "object",
+      "description": "Agent (sub-agent) configuration.",
+      "properties": {
+        "roleTaxonomy": {
+          "type": "boolean",
+          "description": "Inject role taxonomy guidance.",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "display": {
+      "type": "object",
+      "description": "Display / UX configuration.",
+      "properties": {
+        "currency": {
+          "type": "string",
+          "enum": ["usd", "cny", "auto"],
+          "description": "Cost currency display.",
+          "default": "auto"
+        },
+        "showCacheHitRate": {
+          "type": "boolean",
+          "description": "Show prefix cache hit rate.",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "disabledHooks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Selectively disable individual hooks.",
+      "default": []
+    }
+  },
+  "additionalProperties": false
+}

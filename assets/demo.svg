@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <!-- Terminal window frame -->
+  <rect x="10" y="10" width="780" height="480" rx="12" fill="#1a1b26"/>
+
+  <!-- Title bar -->
+  <rect x="10" y="10" width="780" height="36" rx="12" fill="#24283b"/>
+  <rect x="10" y="34" width="780" height="12" fill="#24283b"/>
+  <circle cx="32" cy="28" r="6" fill="#f7768e"/>
+  <circle cx="54" cy="28" r="6" fill="#e0af68"/>
+  <circle cx="76" cy="28" r="6" fill="#9ece6a"/>
+  <text x="400" y="32" font-family="monospace" font-size="13" fill="#565f89" text-anchor="middle">OpenCode Terminal — DeepSeek V4 Active</text>
+
+  <!-- Command line -->
+  <text x="32" y="75" font-family="monospace" font-size="14" fill="#00a86b" font-weight="bold">ds:status</text>
+
+  <!-- Output -->
+  <text x="32" y="105" font-family="monospace" font-size="13" fill="#c0caf5"># DeepSeek Adaptation Status</text>
+  <text x="32" y="128" font-family="monospace" font-size="13" fill="#565f89">  Plugin     : @deepseek/opencode-plugin v0.1.0</text>
+  <text x="32" y="151" font-family="monospace" font-size="13" fill="#9ece6a">  Constitution  : Active (8 articles + statutes)</text>
+  <text x="32" y="174" font-family="monospace" font-size="13" fill="#9ece6a">  V4 Mode    : Auto-detected — deepseek-v4-pro</text>
+  <text x="32" y="197" font-family="monospace" font-size="13" fill="#9ece6a">  Language   : Auto (bilingual zh-CN/EN)</text>
+  <text x="32" y="220" font-family="monospace" font-size="13" fill="#9ece6a">  Providers  : 15 extended endpoints registered</text>
+  <text x="32" y="243" font-family="monospace" font-size="13" fill="#9ece6a">  Schema     : Canonicalized (Reasonix)</text>
+  <text x="32" y="266" font-family="monospace" font-size="13" fill="#9ece6a">  Reasoning  : Sanitizer active</text>
+  <text x="32" y="289" font-family="monospace" font-size="13" fill="#9ece6a">  Retry      : 10x exponential backoff</text>
+
+  <!-- Second command -->
+  <text x="32" y="330" font-family="monospace" font-size="14" fill="#00a86b" font-weight="bold">ds:providers</text>
+
+  <text x="32" y="360" font-family="monospace" font-size="13" fill="#c0caf5">SiliconFlow ─ api.siliconflow.cn          DeepSeek-V4-Pro</text>
+  <text x="32" y="383" font-family="monospace" font-size="13" fill="#7aa2f7">Volcengine  ─ ark.cn-beijing.volces.com   DeepSeek-V4-Pro</text>
+  <text x="32" y="406" font-family="monospace" font-size="13" fill="#bb9af7">NVIDIA NIM  ─ integrate.api.nvidia.com    deepseek-v4-pro</text>
+  <text x="32" y="429" font-family="monospace" font-size="13" fill="#e0af68">Moonshot AI ─ api.moonshot.ai             kimi-k2.7-code</text>
+  <text x="32" y="452" font-family="monospace" font-size="13" fill="#565f89">  + 11 more providers ...</text>
+
+  <!-- Cursor -->
+  <rect x="32" y="475" width="10" height="16" fill="#00a86b">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Side badge -->
+  <rect x="660" y="70" width="100" height="28" rx="6" fill="#00a86b" opacity="0.15"/>
+  <text x="710" y="89" font-family="monospace" font-size="12" fill="#00a86b" text-anchor="middle">V4 PRO</text>
+
+  <rect x="660" y="110" width="100" height="28" rx="6" fill="#9ece6a" opacity="0.15"/>
+  <text x="710" y="129" font-family="monospace" font-size="11" fill="#9ece6a" text-anchor="middle">0.1.0</text>
+
+  <rect x="660" y="150" width="100" height="28" rx="6" fill="#7aa2f7" opacity="0.15"/>
+  <text x="710" y="169" font-family="monospace" font-size="11" fill="#7aa2f7" text-anchor="middle">89 tests</text>
+</svg>

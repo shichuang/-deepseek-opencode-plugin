@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "types": ["node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
