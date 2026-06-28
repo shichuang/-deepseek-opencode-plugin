@@ -1,7 +1,7 @@
 {
   "name": "@deepseek/opencode-plugin",
   "version": "0.1.0",
-  "description": "DeepSeek Adaptation Plugin for OpenCode â€” first-class DeepSeek V4 support, Constitution system prompt, multi-provider ecosystem, and cache-optimized prompt layering",
+  "description": "DeepSeek Adaptation Plugin for OpenCode â€?first-class DeepSeek V4 support, Constitution system prompt, multi-provider ecosystem, and cache-optimized prompt layering",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hmbown/CodeWhale.git"
+    "url": "git+https://github.com/shichuang/-deepseek-opencode-plugin.git"
   },
   "dependencies": {
     "@opencode-ai/plugin": "^1.17.11",

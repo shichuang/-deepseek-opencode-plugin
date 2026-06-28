@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Hmbown/CodeWhale/main/assets/screenshot.png" alt="DeepSeek OpenCode" width="640" />
+  <img src="https://raw.githubusercontent.com/shichuang/-deepseek-opencode-plugin/main/assets/screenshot.png" alt="DeepSeek OpenCode" width="640" />
 </p>
 
 <p align="center">
   <strong>DeepSeek V4 Adaptation Plugin for OpenCode</strong><br>
-  <em>First-class DeepSeek support â€” transplanted from CodeWhale to OpenCode.</em>
+  <em>First-class DeepSeek support â€?transplanted from CodeWhale to OpenCode.</em>
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@deepseek/opencode-plugin"><img alt="npm" src="https://img.shields.io/npm/v/@deepseek/opencode-plugin?style=flat-square&color=cb3837&label=npm" /></a>
-  <a href="https://github.com/Hmbown/CodeWhale/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" /></a>
+  <a href="https://github.com/shichuang/-deepseek-opencode-plugin/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" /></a>
   <a href="https://opencode.ai"><img alt="OpenCode" src="https://img.shields.io/badge/OpenCode-%3E%3D1.17-369eff?style=flat-square" /></a>
   <a href="#"><img alt="DeepSeek" src="https://img.shields.io/badge/DeepSeek-V4-00a86b?style=flat-square" /></a>
 </p>
@@ -18,14 +18,14 @@
 
 ## Why
 
-OpenCode already supports DeepSeek through its OpenAI-compatible provider. But DeepSeek V4 deserves more than a default configuration. CodeWhale spent a year evolving the optimal DeepSeek coding harness â€” this plugin transplants that adaptation layer into OpenCode.
+OpenCode already supports DeepSeek through its OpenAI-compatible provider. But DeepSeek V4 deserves more than a default configuration. CodeWhale spent a year evolving the optimal DeepSeek coding harness â€?this plugin transplants that adaptation layer into OpenCode.
 
 **You get:**
-- A **Constitution** that governs agent behavior â€” 8 articles of production-verified discipline
-- **V4 self-management** â€” prefix-cache awareness, thinking-token strategy, parallel execution
+- A **Constitution** that governs agent behavior â€?8 articles of production-verified discipline
+- **V4 self-management** â€?prefix-cache awareness, thinking-token strategy, parallel execution
 - **15 Chinese/Asian provider endpoints** with verified configurations
-- **Bilingual reasoning** â€” automatic Chinese/English language matching in thinking tokens
-- **Protocol hardening** â€” schema canonicalization, reasoning sanitizer, retry with backoff
+- **Bilingual reasoning** â€?automatic Chinese/English language matching in thinking tokens
+- **Protocol hardening** â€?schema canonicalization, reasoning sanitizer, retry with backoff
 
 ## Install
 
@@ -47,7 +47,7 @@ Set your key:
 export DEEPSEEK_API_KEY=sk-...
 ```
 
-That's it. The plugin activates automatically â€” Constitution, V4 optimization, and all providers are live.
+That's it. The plugin activates automatically â€?Constitution, V4 optimization, and all providers are live.
 
 ## What It Does
 
@@ -61,7 +61,7 @@ That's it. The plugin activates automatically â€” Constitution, V4 optimization,
 CONSTITUTION OF CODEWHALE
 
 I. Ground Truth
-  Report what tools return â€” never invent facts.
+  Report what tools return â€?never invent facts.
 
 II. Verification
   Check before claiming completion.
@@ -73,11 +73,11 @@ III. Momentum
 IV. Legacy
   Leave the workspace cleaner than you found it.
 
-V. Help â€” VI. Priority â€” VII. Domain Context
+V. Help â€?VI. Priority â€?VII. Domain Context
 VIII. Inquiry
 ```
 
-The same 8-article framework that powers CodeWhale agents. Injected as byte-stable system prompt prefix â€” cache-friendly, turn-over-turn stable.
+The same 8-article framework that powers CodeWhale agents. Injected as byte-stable system prompt prefix â€?cache-friendly, turn-over-turn stable.
 
 </td>
 <td width="50%">
@@ -87,10 +87,10 @@ The same 8-article framework that powers CodeWhale agents. Injected as byte-stab
 ```
 Your V4 Characteristics
 
-Degradation curve â€” quality holds through 1M window.
-Prefix cache â€” 128-token granularity, ~90% discount.
-Thinking tokens â€” skip/light/deep strategy.
-Parallel execution â€” batch independent operations.
+Degradation curve â€?quality holds through 1M window.
+Prefix cache â€?128-token granularity, ~90% discount.
+Thinking tokens â€?skip/light/deep strategy.
+Parallel execution â€?batch independent operations.
 ```
 
 Automatically detects DeepSeek V4 models and injects architecture-specific guidance. Non-V4 models get provider-neutral cache hygiene advice.
@@ -119,7 +119,7 @@ Automatically detects DeepSeek V4 models and injects architecture-specific guida
 | **Wanjie Ark** | maas-openapi.wanjiedata.com | deepseek-reasoner |
 | **Xiaomi MiMo** | token-plan-sgp.xiaomimimo.com | mimo-v2.5-pro |
 
-All endpoints verified from CodeWhale's production provider registry. Set the corresponding API key environment variable â€” the plugin handles the rest.
+All endpoints verified from CodeWhale's production provider registry. Set the corresponding API key environment variable â€?the plugin handles the rest.
 
 ### Protocol Hardening
 
@@ -134,9 +134,9 @@ All endpoints verified from CodeWhale's production provider registry. Set the co
 
 | Command | Description |
 |---------|-------------|
-| `ds:status` | Plugin status â€” hooks, providers, config |
+| `ds:status` | Plugin status â€?hooks, providers, config |
 | `ds:providers` | List all 15 extended providers |
-| `ds:doctor` | Diagnostics â€” API key, network, config, hooks |
+| `ds:doctor` | Diagnostics â€?API key, network, config, hooks |
 | `ds:cost` | Token pricing for DeepSeek models |
 | `ds:cache-info` | Prefix cache mechanics and best practices |
 | `ds:strict-tools` | Toggle strict tool mode on DeepSeek beta endpoint |
@@ -189,18 +189,18 @@ src/
 ## Compatibility
 
 Designed to coexist with `oh-my-opencode` and other OpenCode plugins:
-- Duplicate detection â€” gracefully skips if another instance loaded
-- Idempotent injection â€” never duplicates system prompt sections
-- Non-destructive â€” enhances rather than overrides other plugins
+- Duplicate detection â€?gracefully skips if another instance loaded
+- Idempotent injection â€?never duplicates system prompt sections
+- Non-destructive â€?enhances rather than overrides other plugins
 
 ## Acknowledgments
 
 Built from the combined DNA of three projects:
 
-- [**CodeWhale**](https://github.com/Hmbown/CodeWhale) â€” the Constitution, model registry, and agent discipline
-- [**DeepSeek-Reasonix**](https://github.com/esengine/DeepSeek-Reasonix) â€” schema canonicalization, retry backoff, flash-first routing
-- [**oh-my-opencode**](https://github.com/code-yeongyu/oh-my-openagent) â€” engineering conventions and OpenCode plugin patterns
+- [**CodeWhale**](https://github.com/shichuang/-deepseek-opencode-plugin) â€?the Constitution, model registry, and agent discipline
+- [**DeepSeek-Reasonix**](https://github.com/esengine/DeepSeek-Reasonix) â€?schema canonicalization, retry backoff, flash-first routing
+- [**oh-my-opencode**](https://github.com/code-yeongyu/oh-my-openagent) â€?engineering conventions and OpenCode plugin patterns
 
 ## License
 
-MIT â€” same as CodeWhale, Reasonix, and OpenCode.
+MIT â€?same as CodeWhale, Reasonix, and OpenCode.
